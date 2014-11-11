@@ -1,4 +1,4 @@
-<?php
+<?php defined('ABSPATH') or die();
 
 /*
  * To change this template, choose Tools | Templates

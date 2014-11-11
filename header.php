@@ -1,4 +1,4 @@
-<?php
+<?php defined('ABSPATH') or die();
 /**
  * Default Page Header
  *
@@ -94,7 +94,7 @@
                             wp_nav_menu(array(
                                 'menu' => '',
                                 'theme_location' => 'header-menu',
-                                'depth' => 2,
+                                'depth' => 1,
                                 'container' => false,
                                 'menu_class' => 'header-menu',
                                 'fallback_cb' => 'wp_page_menu',
@@ -203,7 +203,7 @@
                 
              
          </div>
-         
+       <?php if ( has_nav_menu( 'main-menu' ) ) {   ?>
        <!-- Menu -->
        <div class="top-main-menu">
            <div class="container">
@@ -224,10 +224,6 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <?php
-                
-                if ( has_nav_menu( 'main-menu' ) ) {      
-                    
-                
                     wp_nav_menu( array(
                         'menu'       => '',
                         'theme_location' => 'main-menu',
@@ -237,14 +233,13 @@
                         'fallback_cb' => 'wp_page_menu',
                         'walker' => new wp_bootstrap_navwalker())
                     );    
-                    
-                }
                 ?>
             </div><!-- /.navbar-collapse -->
             </nav>
         </div><!-- /.container -->
     
        </div>
+       <?php } ?>
          </div>
   </header>
             

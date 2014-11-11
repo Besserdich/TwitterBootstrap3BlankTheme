@@ -1,4 +1,4 @@
-<?php
+<?php defined('ABSPATH') or die();
 /**
  * Template Name: Full Width Page
  * Description: Page template with a full width content container.

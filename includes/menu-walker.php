@@ -1,4 +1,4 @@
-<?php
+<?php defined('ABSPATH') or die();
 
 /**
  * Class Name: wp_bootstrap_navwalker

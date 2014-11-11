@@ -1,4 +1,4 @@
-<?php
+<?php defined('ABSPATH') or die();
 /**
  * Default Footer
  * @author Nina Taberski-Besserdich (nina.taberski@besserdich.com)
@@ -53,7 +53,7 @@
                                 wp_nav_menu(array(
                                     'menu' => '',
                                     'theme_location' => 'footer-menu',
-                                    'depth' => 2,
+                                    'depth' => 1,
                                     'container' => false,
                                     'menu_class' => 'footer-menu',
                                     'fallback_cb' => 'wp_page_menu',

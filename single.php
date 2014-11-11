@@ -1,4 +1,4 @@
-<?php
+<?php defined('ABSPATH') or die();
 /**
  * Default Post Template
  * Description: Post template with a content container and right sidebar.
