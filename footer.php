@@ -1,4 +1,4 @@
-<?php
+<?php defined('ABSPATH') or die();
 /**
  * Default Footer
  * @author Nina Taberski-Besserdich (nina.taberski@besserdich.com)

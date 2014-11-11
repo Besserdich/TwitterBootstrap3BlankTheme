@@ -1,4 +1,4 @@
-<?php
+<?php defined('ABSPATH') or die();
 /**
  * Template for displaying Comments.
  *

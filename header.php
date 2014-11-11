@@ -1,4 +1,4 @@
-<?php
+<?php defined('ABSPATH') or die();
 /**
  * Default Page Header
  *

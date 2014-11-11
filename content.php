@@ -1,4 +1,4 @@
-<?php
+<?php defined('ABSPATH') or die();
 /**
  * The default template for displaying content foreach entry in index.php, archiv.php etc. 
  * @author Nina Taberski-Besserdich (nina.taberski@besserdich.com)

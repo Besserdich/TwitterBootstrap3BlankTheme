@@ -1,4 +1,4 @@
-<?php
+<?php defined('ABSPATH') or die();
 /**
  * Description: Default Index template to display loop of blog posts
  * @author Nina Taberski-Besserdich (nina.taberski@besserdich.com)

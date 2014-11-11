@@ -1,4 +1,4 @@
-<?php
+<?php defined('ABSPATH') or die();
 /**
  * BIC Bootstrap Wordpress Theme Functions
  * Original from BootstrapWP
