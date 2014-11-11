@@ -38,24 +38,11 @@ if (!function_exists('bicbswp_theme_setup')):
         add_theme_support('post-thumbnails');
         add_theme_support('post-formats', array('aside', 'image', 'gallery', 'link', 'quote', 'status', 'video', 'audio', 'chat'));
 
-        register_nav_menus(
-                array(
-                    'main-menu' => __('Main Menu', 'bicbswp'),
+        register_nav_menus(array(
+            'main-menu' => __('Main Menu', 'bicbswp'),
+            'footer-menu' => __('Footer Menu', 'bicbswp'),
+            'header-menu' => __('Header Menu', 'bicbswp'),
         ));
-
-        register_nav_menus(
-                array(
-                    'footer-menu' => __('Footer Menu', 'bicbswp'),
-        ));
-        
-        
-                register_nav_menus(
-                array(
-                    'header-menu' => __('Header Menu', 'bicbswp'),
-        ));
-
-
-
 
         // Register Custom Navigation Walker
         require_once ( get_template_directory() .'/includes/menu-walker.php');

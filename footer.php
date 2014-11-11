@@ -53,7 +53,7 @@
                                 wp_nav_menu(array(
                                     'menu' => '',
                                     'theme_location' => 'footer-menu',
-                                    'depth' => 2,
+                                    'depth' => 1,
                                     'container' => false,
                                     'menu_class' => 'footer-menu',
                                     'fallback_cb' => 'wp_page_menu',
