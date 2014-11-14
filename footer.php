@@ -39,7 +39,7 @@
                                 <ul class="credit">
                                     <li>&copy; <?php echo date('Y'); ?> <?php bloginfo(); ?></li>
                                     <li><?php _e('Proudly powered by ', 'bicbswp') ?> <a href="<?php echo esc_url(__('http://wordpress.org/', 'bicbswp')); ?>" ><?php _e('WordPress', 'bicbswp') ?></a>.</li>
-                                    <li><?php printf(__('Theme: BIC Bootstrap WP Theme', 'bicbswp')); ?> <a href="http://www.besserdich.com/">Besserdich IT Consulting</a></li>
+                                    <li><?php printf(__('WP BIC Twitter Bootstrap 3 Blank Theme', 'bicbswp')); ?> <a href="http://www.besserdich.com/">Besserdich Sustainable IT Solutions GmbH</a></li>
                                 </ul><!-- end .credit -->
                             <?php } ?>
 
