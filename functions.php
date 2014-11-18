@@ -77,6 +77,18 @@ function bootstrapwp_styles_loader() {
 add_action('wp_enqueue_scripts', 'bootstrapwp_styles_loader');
 
 /**
+ * Load jQuery latest for theme from Google repository and avoid conflicts.
+ *
+ */
+if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
+function my_jquery_enqueue() {
+   wp_deregister_script('jquery');
+   wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://code.jquery.com/jquery-latest.min.js", false, null);
+   wp_enqueue_script('jquery');
+}
+
+
+/**
  * Load JavaScript and jQuery files for theme.
  *
  */
