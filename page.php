@@ -40,19 +40,6 @@
     
     
     
-    <div class="row main-top">
-        
-        <div class="col-lg-9 col-md-9 col-sm-9 col-9">
-
-            <header>
-                       
-                <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
-            
-            </header>
-
-        </div><!--/.col -->
-  
-    </div><!--/.row -->
     
     
     
@@ -61,6 +48,12 @@
                 <div class="col-lg-9 col-md-9 col-sm-9 col-9">
                     
                     <div class="content main">
+                        
+             <header>
+                       
+                <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
+            
+            </header>
 
                         <article class="post" id="post-<?php the_ID(); ?>">
 
