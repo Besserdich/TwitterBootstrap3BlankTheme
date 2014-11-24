@@ -74,11 +74,7 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
 		<td><input id="bicbswp_theme_options[excerpts]" name="bicbswp_theme_options[excerpts]" type="checkbox" value="1" <?php checked( '1', $options['excerpts'] ); ?> />	
 	</td>
       </tr>   
-       <tr>
-	 <th scope="row">Show Search in Header </th>
-		<td><input id="bicbswp_theme_options[search_header]" name="bicbswp_theme_options[search_header]" type="checkbox" value="1" <?php checked( '1', $options['search_header'] ); ?> />	
-	</td>
-      </tr>     
+          
       <tr>
 	 <th scope="row">Show Meta Data (Posted on .. by..) </th>
 		<td><input id="bicbswp_theme_options[meta_data]" name="bicbswp_theme_options[meta_data]" type="checkbox" value="1" <?php checked( '1', $options['meta_data'] ); ?> />	

@@ -225,6 +225,22 @@ function bootstrapwp_widgets_init() {
             )
     );
         
+        
+        
+    // header widget sidebar
+    register_sidebar(
+            array(
+                'name' => __('Header Widget Area', 'bicbswp'),
+                'id' => 'header-widget-area',
+                'description' => __('Header Widget Area', 'bicbswp'),
+                'before_widget' => '<aside><div id="%1$s" class="widget %2$s">',
+                'after_widget' => '</div></aside>',
+                'before_title' => '<h4>',
+                'after_title' => '</h4>'
+            )
+    );
+
+        
 }
 
 add_action('init', 'bootstrapwp_widgets_init');

@@ -144,42 +144,23 @@ defined('ABSPATH') or die();
                             <div class="row">
                                 <div class=" col-sm4 col-sm-offset-5">
 
-                                    <!-- search -->
-
-<?php
-// Search
-$options = get_option('bicbswp_theme_options');
-if ($options['search_header'] == 1) {
-    ?>
-
-
-                                        <div id="search-head" class="hidden-xs">
-
-                                        <?php get_search_form(); ?>    
-
-                                        </div>
-
-
-
-    <?php }
-?>
-
-
-
-
-                                </div>
-
-                            </div>
-                            <!--
-                             <div class="row">
-                                <div class="col-md-12 ">
-                                    <div class="logo-line hidden-sm hidden-xs"></div>
+                                
                                     
-                                  
-                                      
+                                    
+                                    
+                                    <div class="bic-header-widget">
+
+                                    <?php
+                                    if (function_exists('dynamic_sidebar')) {
+                                        dynamic_sidebar("header-widget-area");
+                                    }
+                                    ?>
+
+
                                 </div>
+
                             </div>
-                            -->
+                         
 
 
                         </div>
