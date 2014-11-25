@@ -71,12 +71,6 @@
         </div>
     </div>
 </footer>
-
-
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-
-
 <?php wp_footer(); ?>
 </body>
 </html>
