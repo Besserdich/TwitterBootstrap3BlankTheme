@@ -9,11 +9,11 @@
  */
 get_header();
 ?>
-<div class="container">
+<div class="container main">
 
 
     <div class="row">
-        <div class="col-12">
+        <div class="col-md-12">
             <?php
             if (function_exists('bootstrapwp_breadcrumbs')) {
                 bootstrapwp_breadcrumbs();

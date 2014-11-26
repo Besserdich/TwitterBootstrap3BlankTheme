@@ -181,7 +181,7 @@ defined('ABSPATH') or die();
 <?php if (has_nav_menu('main-menu')) { ?>
                     <!-- Menu -->
                     <div class="top-main-menu">
-                        <div class="container">
+                       <!-- <div class="container">-->
                             <nav class="navbar navbar-default"  role="navigation">
                                 <!-- Brand and toggle get grouped for better mobile display -->
 
@@ -211,7 +211,7 @@ defined('ABSPATH') or die();
     ?>
                                 </div><!-- /.navbar-collapse -->
                             </nav>
-                        </div><!-- /.container -->
+                        <!--</div>--><!-- /.container -->
 
                     </div>
                                 <?php } ?>
