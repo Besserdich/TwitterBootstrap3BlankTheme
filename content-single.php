@@ -57,6 +57,24 @@
       
 
     </section>
+    
+    <?php
+    // AUTHOR INFO  
+   
+		if ( get_the_author_meta( 'description' ) ) :   ?>
+    
+		<div class="author-info">
+                    
+		<?php echo get_avatar( get_the_author_meta( 'user_email' ), 100 ); ?>
+				<div class="author-details">
+                                    
+					<h3><?php print( __( 'Posted by ', 'bicbswp' )); 
+                                        the_author_link(); ?> 
+					
+				</div><!-- end .author-details -->
+					<p class="author-description"><?php the_author_meta( 'description' ); ?></p>	
+			</div><!-- end .author-info -->
+			<?php endif; ?>
 
    
 
