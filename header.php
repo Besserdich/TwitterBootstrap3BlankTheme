@@ -178,13 +178,15 @@ defined('ABSPATH') or die();
 <?php if (has_nav_menu('main-menu')) { ?>
                     <!-- Menu -->
                     <div class="top-main-menu">
-                       <!-- <div class="container">-->
+                    
                             <nav class="navbar navbar-default"  role="navigation">
                                 <!-- Brand and toggle get grouped for better mobile display -->
 
                                 <div class="navbar-header">
+                                    <span class="navbar-toggled-title visible-xs"><?php printf(__('Menu')) ?></span>
                                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                                         <span class="sr-only">Toggle navigation</span>
+                                        
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
@@ -208,7 +210,7 @@ defined('ABSPATH') or die();
     ?>
                                 </div><!-- /.navbar-collapse -->
                             </nav>
-                        <!--</div>--><!-- /.container -->
+                        
 
                     </div>
                                 <?php } ?>

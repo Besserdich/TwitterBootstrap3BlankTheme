@@ -27,7 +27,7 @@
                     <div class="col-md-12">
 
 
-                        <div class="pull-left">
+                        <div class="pull-left copyright-text">
                             <?php
                             $options = get_option('bicbswp_theme_options');
                             if ($options['footertext'] != '') {

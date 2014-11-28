@@ -11,31 +11,35 @@
 
 
 
-<div class="container main">
 
-
-
-
-    <div class="row">
-
+     <div class="container main">
+         
+         
+         
+         
+     <div class="row">
+         
         <div class="col-md-12">
-
+            
             <?php
             if (function_exists('bootstrapwp_breadcrumbs')) {
-
+                
                 bootstrapwp_breadcrumbs();
+                
             }
             ?>
-
+            
         </div><!--/.col -->
-
+         
     </div><!--/.row -->
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="row">
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
@@ -61,25 +65,32 @@
 
                 </div> 
 
-                <hr/>
-
-                <h2 class="headline"><?php _e('Recent Posts', 'bicbswp'); ?></h2>
-
+               
             <?php } ?>
 
         </div><!--/.col -->
 
     </div><!--/.row -->
 
-
-
-
-
-
-
-    <div class="row">     
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     <div class="row main-content">
+         
+                
+         
         <div class="col-lg-9 col-md-9 col-sm-9 col-9">
+            
+                                <div class="content main">
+
 
             <?php
             if (have_posts()) : while (have_posts()) : the_post();
@@ -97,7 +108,7 @@
                 bootstrapwp_content_nav('nav-below');
             }
             ?>
-
+                                </div>
         </div><!--/.col -->
 
         <div class="col-lg-3 col-md-3 col-sm-3 col-3 sidebar-wrapper">
@@ -105,13 +116,19 @@
             <?php get_sidebar('post'); ?>
 
         </div><!--/.col -->
-
-    </div><!--/.row -->
-
-
-
-</div><!-- container -->
-
-
-
+        
+    
+     </div> <!--/.row -->
+        
+        
+        
+        
+         
+        
+    </div><!-- container -->
+    
+    
+    
+    
 <?php get_footer(); ?>
+
