@@ -58,6 +58,10 @@
 
     </section>
     
+    
+    
+    <hr/>
+    
     <?php
     // AUTHOR INFO  
    
