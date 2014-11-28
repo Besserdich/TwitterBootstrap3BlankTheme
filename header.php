@@ -114,7 +114,7 @@ defined('ABSPATH') or die();
 
 
                         <!-- Logo -->
-                        <div class="col-md-8 col-sm-12 brand">
+                        <div class="col-md-9 col-sm-12 brand">
 
 
                             <a href="<?php bloginfo('url'); ?>">
@@ -137,18 +137,16 @@ defined('ABSPATH') or die();
                         </div>
 
 
-                        <!-- Search and Line -->  
-                        <div class="col-md-4 col-sm-12">
+                        <div class="col-md-3 col-sm-12">
 
 
                             <div class="row">
-                                <div class=" col-sm4 col-sm-offset-5">
 
                                 
                                     
                                     
                                     
-                                    <div class="bic-header-widget">
+                                    <div class="header-widget">
 
                                     <?php
                                     if (function_exists('dynamic_sidebar')) {
@@ -157,7 +155,6 @@ defined('ABSPATH') or die();
                                     ?>
 
 
-                                </div>
 
                             </div>
                          
