@@ -16,15 +16,9 @@
 @import url('bootstrap/css/bootstrap.min.css');
 
 
-html, body {
-    border: 0 none;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-}
 
-/* styles needes for shortcodes  */
+
+/* styles for shortcodes  */
 
 .divider {
     margin-bottom: 25px;
@@ -36,7 +30,9 @@ html, body {
     width: 100%;
 }
 
-/* Styling of standard gallery shortcode, removed in functions */
+
+/* Styling of standard gallery shortcode */
+
 .gallery {
     margin: auto;
 }
@@ -58,22 +54,48 @@ html, body {
 
 
 
-/* basic styles for layout, can be removed. */
+
+
+
+/*Styles for Plugins*/
+
+/* Pagenavi */
+
+.wp-pagenavi{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+
+
+
+
+/* very basic styles for layout */
+
+
+/*Body*/ 
+
+html, body {
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
 
 
 /* Top Header */ 
-
 
  #top-header{
         display: none;
     }
 
     
-       
 #top-header{
     background-color: #F8F8F8;
     color: #333;
-    font-size: 80%;
+    font-size: 0.8rem;
     min-height: 100%;
     height: 100%;
     width: 100%;
@@ -94,6 +116,7 @@ html, body {
 
 
 /* Brand */
+
 .brand{
     margin-top: 15px;
     margin-bottom: 15px;
@@ -113,7 +136,6 @@ html, body {
     display: inline-block;
 }
 
-
 .header-menu  li {
     display: inline;
     padding-right: 10px;
@@ -121,9 +143,6 @@ html, body {
 }
 
 
-.header-menu li:last-child{
-    border-right:none;
-}
 
 
 /*Main Menu*/
@@ -133,6 +152,7 @@ html, body {
     display: inline;
     margin: 15px;
 }
+
 
 /*Breadcrumbs*/
 
@@ -144,6 +164,7 @@ html, body {
 
 
 /* post image */
+
 .wp-post-image{
     float: left;
     margin-right: 15px;  
@@ -151,18 +172,14 @@ html, body {
 
 
 
-
-
-/*More Links*/
-
+/*Read More Links*/
 
 .read-more{
-
     background-color: #428BCA;
     border-color: #428BCA;
     color: #FFFFFF;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 1.2rem;
     line-height: 1.5;
     padding: 6px 12px;
     border: 1px solid rgba(0, 0, 0, 0);
@@ -176,10 +193,6 @@ html, body {
     white-space: nowrap;
 }
 
-
-
-
-
 .read-more:hover {
     background-color: #3276B1;
     border-color: #3276B1;
@@ -191,9 +204,8 @@ html, body {
 /* meta data */ 
 
 .meta{	
-    font-size: 12px;
+    font-size: 0.9rem;
 }
-
 
 .cats{
     margin-left: 5px;
@@ -217,25 +229,18 @@ html, body {
     border-color: #dcdcdc;
 }
 
-
 .sidebar-wrapper ul {
     padding-left: 25px;
 }
-
-
 
 .sidebar-wrapper p {
     padding-left: 10px;
 }
 
-
 .sidebar-posts .textwidget, .sidebar-page .textwidget{
     padding-left: 15px;
 
 }
-
-
-
 
 
 /* Widgets */
@@ -244,20 +249,9 @@ html, body {
     margin-bottom: 40px;
 }
 
- 
-    .header-widget{
-        display: none;
-    }
-
-
-/* Pagenavi */
-
-.wp-pagenavi{
-    margin-bottom: 25px;
-    text-align: center;
+.header-widget{
+    display: none;
 }
-
-
 
 
 /* code in comments*/
@@ -276,38 +270,20 @@ code {
     top: 0px;
     left: 0;
     padding: 0 15px;
-    color: #ffffff;
-    background-color: #999;
+    background-color: #F8F8F8;
 }
-
 
 .footer{
     padding-top: 15px;
     padding-bottom: 20px;
-    color: #ffffff;
 }
-
-
 
 .footer h3, .footer h4, .footer h5, .footer h6 {
     margin-bottom: 20px;
-    font-size: 20px;
-    color: #ffffff;
+    font-size: 1.5rem;
     text-transform: none;
     font-weight: bold;
 }
-
-
-.footer a{
-    color: #ffffff;
-
-}
-
-
-.footer .btn {
-    color: #262F59;
-}
-
 
 .footer-menu {
     list-style: none outside none;
@@ -315,59 +291,33 @@ code {
 
 }
 
-
 .footer-menu-wrapper ul, ol{
     margin-left: 0px;
     padding-left: 0px; 
 }
 
-
-
 .footer-menu  li {
     display: inline;
     padding-right: 10px;
     padding-left: 5px;
- 
 }
-
-
-.footer-menu li:last-child{
-    border-right:none;
-}
-
-
-
-
-
-.footer, .copyright a{
-    color: #ffffff;
-}
-
-
-.footer ul li{
-    color: #ffffff;
-}
-
-
-
 
 
 /* Copyright*/
 
 .copyright-wrapper{
-    background-color: #666;
+    background-color: #F8F8F8;
     min-height: 100%;
     height: 100%;
     width: 100%;
     top: 0px;
     left: 0;
     padding: 0 15px;
-    color: #ffffff;
     font-size: 0.8rem;
 }
 
 .credit{
-    font-size: 10px;
+    font-size: 0.8rem;
     text-transform: none;
     list-style: none outside none;
     display: inline-block;
@@ -377,7 +327,6 @@ code {
 .credit li{
     display: inline;
 }
-
 
 .copyright-text {
     margin-right: 40px
@@ -391,46 +340,37 @@ code {
 
 
 
+
+
 /* MEDIA QUERIES */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
 
+@media (min-width: 768px) {
 
  #top-header{
         display: block;
     }
     
-    
     .header-widget{
         display: block;
     }
-
-
 
     .header-menu-wrapper{
         float: right;
     }
 
-
     .footer-menu-wrapper{
         float: right;
     }
 
-
-
-
     .footer-menu-wrapper ul, ol{
         margin-left: 10px;
     }
-
-
-
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
 
     #top-header ul,ol{
         margin-left: 10px;
@@ -439,7 +379,6 @@ code {
     .header-menu li:first-child {
         padding-left: 20px;
     }
-
 
 }
 
