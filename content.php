@@ -13,7 +13,7 @@
         <h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf(esc_attr__('Permalink to %s', 'bicbswp'), the_title_attribute('echo=0')); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
         <aside class="entry-details">
 
-            <p class="meta"><?php echo bootstrapwp_posted_on(); ?> <?php edit_post_link(__('- Edit', 'bicbswp')); ?>
+            <p class="meta"><?php echo bootstrapwp_posted_on(); ?> <?php edit_post_link(__('Edit', 'bicbswp')); ?>
                 <br/>
                 <?php bicbswp_cats_tags(); ?> 
             </p>
