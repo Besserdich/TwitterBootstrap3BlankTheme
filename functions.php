@@ -464,46 +464,7 @@ function bootstrapwp_enhanced_image_navigation($url) {
 
 add_filter('attachment_link', 'bootstrapwp_enhanced_image_navigation');
 
-/**
- * Checks if a post thumbnails is already defined.
- *
- */
-function bootstrapwp_is_post_thumbnail_set() {
-    global $post;
-    if (get_the_post_thumbnail()) {
-        return true;
-    } else {
-        return false;
-    }
-}
 
-/**
- * Set post thumbnail as first image from post, if not already defined.
- * NT Bug fixed, wasnt set. 
- */
-function bootstrapwp_autoset_featured_img() {
-    global $post;
-
-    $post_thumbnail = bootstrapwp_is_post_thumbnail_set();
-    if ($post_thumbnail == true) {
-        return get_the_post_thumbnail($post->ID, 'thumbnail', array('class' => 'img-responsive'));
-    }
-    $image_args = array(
-        'post_type' => 'attachment',
-        'numberposts' => 1,
-        'post_mime_type' => 'image',
-        'post_parent' => $post->ID,
-        'order' => 'desc'
-    );
-    $attached_images = get_children($image_args, ARRAY_A);
-    $first_image = reset($attached_images);
-    if (!$first_image) {
-        return false;
-    }
-
-    set_post_thumbnail($post->ID, $first_image['ID']);
-    return get_the_post_thumbnail($post->ID, 'medium', array('class' => 'img-responsive'));
-}
 
 /**
  * Define default page titles.

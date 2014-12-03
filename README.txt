@@ -105,6 +105,8 @@ Please report all issues and comments on: http://www.besserdich.com/wordpress/tw
 by email to nina.taberski@besserdich.com.  
 
 
+Later Versions see git repository 
+
 
 Version 0.3
 ***********

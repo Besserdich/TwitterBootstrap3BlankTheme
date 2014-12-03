@@ -36,15 +36,17 @@
 
                     <div class="entry-content">
 
-                        <?php if (bootstrapwp_autoset_featured_img() !== false) : ?>
-
-                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute('echo=0'); ?>">
-                                <?php echo bootstrapwp_autoset_featured_img(); ?>
-                            </a>
-
-                       <?php endif; ?>
+                        <?php 
+                        if ( has_post_thumbnail() ) { ?>
+                        
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute('echo=0'); ?>">
+                            
+                            <?php the_post_thumbnail('thumbnail'); ?>
+                            
+                        </a>
+                            
+                       <?php  }   
                        
-                     <?php
                         $options = get_option('bicbswp_theme_options');
 
                         if ($options['excerpts']) {
