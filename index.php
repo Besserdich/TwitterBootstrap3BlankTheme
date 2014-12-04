@@ -53,9 +53,8 @@
 
                     $page = get_post($options['front_page']);
 
-                    $page_content = $page->post_content;
-
-                    echo $page_content;
+                    echo apply_filters( 'the_content', get_post_field('post_content', $page) );
+                    
                 }
                 ?>
 
