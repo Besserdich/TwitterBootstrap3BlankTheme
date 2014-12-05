@@ -15,7 +15,6 @@ defined('ABSPATH') or die();
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
         <title><?php wp_title(); ?> </title>
         <?php
         // Favicon
@@ -52,42 +51,26 @@ defined('ABSPATH') or die();
 
 <?php wp_head(); ?>
     </head>
+    
     <body <?php body_class(); ?>>
-
-
+        
         <header>
 
-
-
-
-
-            <!-- Top header for Adresse and Top Menu --> 
-
+            <!-- Top header --> 
             <div id="top-header">
                 <div class="container">
-
-
-
-                    <!-- Top Callout from Theme Options -->
-
+                    <!-- Top Callout from Theme Options -->          
                     <?php
                     $options = get_option('bicbswp_theme_options');
 
                     if ($options['top-callout'] != '') {
-
                         echo ($options['top-callout']);
                     }
                     ?>
 
-
-
-
-
                     <div class="header-menu-wrapper">
-
                         <?php
                         if (has_nav_menu('header-menu')) {
-
                             wp_nav_menu(array(
                                 'menu' => '',
                                 'theme_location' => 'header-menu',
@@ -99,122 +82,80 @@ defined('ABSPATH') or die();
                             );
                         }
                         ?>
-
                     </div>
-
                 </div>
             </div>
 
 
-            <!-- Brand Logo -->
+            <!-- Blog Name & Logo -->
             <div class="top-main-menu">
                 <div class="container">
                     <div class="row">
-
-
-
                         <!-- Logo -->
                         <div class="col-md-9 col-sm-12 brand">
-
-
                             <a href="<?php bloginfo('url'); ?>">
-
 
                             <?php
                             $options = get_option('bicbswp_theme_options');
 
                             if ($options['logo'] != '') {
-
                                 echo '<img src="' . $options['logo'] . '" class="img-responsive" alt="' . get_bloginfo('name') . '">';
-                            } else {
-                                echo '<div id="site-title">' . get_bloginfo('name') . '</div>';
-                            }
-                            ?>
-
-
-
+                                } else {
+                                        echo '<div id="site-title">' . get_bloginfo('name') . '</div>';
+                            }?>  
                             </a>
                         </div>
 
-
+                        <!-- Header Widget from Theme options -->
                         <div class="col-md-3 col-sm-12">
-
-
                             <div class="row">
-
-                                
-                                    
-                                    
-                                    
                                     <div class="header-widget">
-
-                                    <?php
-                                    if (function_exists('dynamic_sidebar')) {
-                                        dynamic_sidebar("header-widget-area");
-                                    }
-                                    ?>
-
-
-
+                                        <?php
+                                        if (function_exists('dynamic_sidebar')) {
+                                            dynamic_sidebar("header-widget-area");
+                                        }
+                                        ?>
+                                    </div>
                             </div>
-                         
-
-
                         </div>
-
-
-
-
-
-
                     </div>
-
-
-
-
-
-
-                </div>
-<?php if (has_nav_menu('main-menu')) { ?>
-                    <!-- Menu -->
-                    <div class="top-main-menu">
                     
-                            <nav class="navbar navbar-default"  role="navigation">
-                                <!-- Brand and toggle get grouped for better mobile display -->
+                    <?php if (has_nav_menu('main-menu')) { ?>
+                    <!-- Menu -->
+                        <div class="top-main-menu">
+                                <nav class="navbar navbar-default"  role="navigation">
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <span class="navbar-toggled-title visible-xs"><?php printf(__('Menu')) ?></span>
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
 
-                                <div class="navbar-header">
-                                    <span class="navbar-toggled-title visible-xs"><?php printf(__('Menu')) ?></span>
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-
-
-                                </div>
-
-                                <!-- Collect the nav links, forms, and other content for toggling -->
-                                <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <?php
-    wp_nav_menu(array(
-        'menu' => '',
-        'theme_location' => 'main-menu',
-        'depth' => 2,
-        'container' => false,
-        'menu_class' => 'nav navbar-nav',
-        'fallback_cb' => 'wp_page_menu',
-        'walker' => new wp_bootstrap_navwalker())
-    );
-    ?>
-                                </div><!-- /.navbar-collapse -->
-                            </nav>
-                        
-
-                    </div>
-                                <?php } ?>
-            </div>
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                        <?php
+                                        wp_nav_menu(array(
+                                            'menu' => '',
+                                            'theme_location' => 'main-menu',
+                                            'depth' => 2,
+                                            'container' => false,
+                                            'menu_class' => 'nav navbar-nav',
+                                            'fallback_cb' => 'wp_page_menu',
+                                            'walker' => new wp_bootstrap_navwalker())
+                                        );
+                                        ?>
+                                    </div><!-- /.navbar-collapse -->
+                                </nav>
+                            
+                        </div><!-- /.top-main-menu -->
+                  <?php } ?>
+                                
+                </div><!-- /.container -->
+            </div><!-- /.top-main-menu -->
         </header>
 
-        <!-- End Header. Begin Template Content -->
+     <!-- End Header. Begin Template Content -->
