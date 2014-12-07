@@ -59,6 +59,7 @@ defined('ABSPATH') or die();
             <!-- Top header --> 
             <div id="top-header">
                 <div class="container">
+                    <div class="top-callout">
                     <!-- Top Callout from Theme Options -->          
                     <?php
                     $options = get_option('bicbswp_theme_options');
@@ -67,6 +68,7 @@ defined('ABSPATH') or die();
                         echo ($options['top-callout']);
                     }
                     ?>
+                    </div>
 
                     <div class="header-menu-wrapper">
                         <?php
