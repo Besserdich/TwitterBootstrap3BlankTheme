@@ -81,6 +81,20 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
 	</td>
       </tr> 
       <tr>
+	 <th scope="row">Size of Featured Image on Archive Pages </th>
+		<td>thumbnail<input id="bicbswp_theme_options[featured_img_arch_thumb]" name="bicbswp_theme_options[featured_img_arch_size]" type="radio" value="1" <?php checked( '1', $options['featured_img_arch_size'] ); ?> />
+                    medium<input id="bicbswp_theme_options[featured_img_arch_med]" name="bicbswp_theme_options[featured_img_arch_size]" type="radio" value="2" <?php checked( '2', $options['featured_img_arch_size'] ); ?> />
+                    large<input id="bicbswp_theme_options[featured_img_arch_large]" name="bicbswp_theme_options[featured_img_arch_size]" type="radio" value="3" <?php checked( '3', $options['featured_img_arch_size'] ); ?> />
+	</td>
+      </tr> 
+       <tr>
+	 <th scope="row">Size of Featured Image on Single Post</th>
+		<td>thumbnail<input id="bicbswp_theme_options[featured_img_sing_thumb]" name="bicbswp_theme_options[featured_img_sing_size]" type="radio" value="1" <?php checked( '1', $options['featured_img_sing_size'] ); ?> />
+                    medium<input id="bicbswp_theme_options[featured_img_sing_med]" name="bicbswp_theme_options[featured_img_sing_size]" type="radio" value="2" <?php checked( '2', $options['featured_img_sing_size'] ); ?> />
+                    large<input id="bicbswp_theme_options[featured_img_sing_large]" name="bicbswp_theme_options[featured_img_sing_size]" type="radio" value="3" <?php checked( '3', $options['featured_img_sing_size'] ); ?> />
+	</td>
+      </tr> 
+      <tr>
 	 <th scope="row">Show Featured Image on Single Post</th>
 		<td><input id="bicbswp_theme_options[featured_single]" name="bicbswp_theme_options[featured_single]" type="checkbox" value="1" <?php checked( '1', $options['featured_single'] ); ?> />	
 	</td>

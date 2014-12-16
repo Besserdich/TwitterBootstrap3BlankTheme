@@ -38,7 +38,25 @@
                         
                         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute('echo=0'); ?>">
                             
-                            <?php the_post_thumbnail('medium'); ?>
+                              <?php $options = get_option('bicbswp_theme_options');
+                            
+                                switch ($options['featured_img_sing_size']) {
+                                    
+                                   case 1:
+                                       $thumbnail_size="thumbnail";
+                                       break; 
+                                   case 2: 
+                                       $thumbnail_size="medium";
+                                       break;
+                                   case 3:
+                                       $thumbnail_size="large";
+                                       break; 
+                                   default: 
+                                       $thumbnail_size="thumbnail";
+                                }
+                            ?>
+                            <?php the_post_thumbnail($thumbnail_size); ?>
+                            
                             
                         </a>
                             
