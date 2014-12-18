@@ -78,17 +78,20 @@
                 printf(
                         __('Category Archives: %s', 'bicbswp'), '<span>' . single_cat_title('', false) . '</span>'
                 );
-                // Show an optional category description
+
+            } else {
+                _e('Blog Archives', 'bicbswp');
+            }
+?></h1>
+                              
+                              <?php 
+                                              // Show an optional category description
                 $category_description = category_description();
                 if ($category_description) {
                     echo apply_filters(
                             'category_archive_meta', '<div class="category-archive-meta">' . $category_description . '</div>'
                     );
-                }
-            } else {
-                _e('Blog Archives', 'bicbswp');
-            }
-?></h1>
+                }?>
             </header>
             
             
