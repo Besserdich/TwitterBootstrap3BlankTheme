@@ -495,7 +495,7 @@ add_filter('wp_title', 'bootstrapwp_wp_title', 10, 2);
  * Display template for breadcrumbs.
  *
  */
-function bootstrapwp_breadcrumbs() {
+function bootstrapwp_breadcrumbs($addTexts = true) {
     $home = 'Home'; // text for the 'Home' link
     $before = '<li class="active">'; // tag before the current crumb
     $sep = '';
@@ -517,7 +517,8 @@ function bootstrapwp_breadcrumbs() {
             if ($thisCat->parent != 0) {
                 echo get_category_parents($parentCat, true, $sep);
             }
-             echo $before. __('Archive by category ', 'bicbswp'). '"'. single_cat_title('', false) . '"' . $after;
+            $format = $before . ($addTexts ? (__('Archive by category ', 'bicbswp') . '"%s"') : '%s') . $after;
+            echo sprintf($format, single_cat_title('', false));
             
                     } elseif (is_day()) {
             echo '<li><a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time(
@@ -576,13 +577,16 @@ function bootstrapwp_breadcrumbs() {
             }
             echo $before . get_the_title() . $after;
         } elseif (is_search()) {
-            echo $before . __('Search results for "', 'bicbswp') . get_search_query() . '"' . $after;
+            $format = $before . ($addTexts ? (__('Search results for "', 'bicbswp') . '"%s"') : '%s') . $after;
+            echo sprintf($format, get_search_query());
         } elseif (is_tag()) {
-            echo $before . __('Posts tagged "', 'bicbswp') . single_tag_title('', false) . '"' . $after;
+            $format = $before . ($addTexts ? (__('Posts tagged "', 'bicbswp') . '"%s"') : '%s') . $after;
+            echo sprintf($format, single_tag_title('', false));
         } elseif (is_author()) {
             global $author;
             $userdata = get_userdata($author);
-            echo $before . __('Articles posted by ', 'bicbswp') . $userdata->display_name . $after;
+            $format = $before . ($addTexts ? (__('Articles posted by ', 'bicbswp') . '"%s"') : '%s') . $after;
+            echo sprintf($format, $userdata->display_name);
         } elseif (is_404()) {
             echo $before . __('Error 404', 'bicbswp') . $after;
         }
