@@ -3,355 +3,345 @@ msgstr ""
 "Project-Id-Version: BIC Bootstrap WP Theme v0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-12-07 19:46:11+0000\n"
+"PO-Revision-Date: 2015-01-04 23:28+0100\n"
 "Last-Translator: nina-taberski <nina.taberski@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: CSL v1.x\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
+"X-Generator: Poedit 1.7.1\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Poedit-Basepath: ../\n"
-"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"Language: de_DE\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Textdomain-Support: yes"
 
-#: archive.php:48
+# @ bicbswp
+#: archive.php:59
 #, php-format
-#@ bicbswp
 msgid "Daily Archives: %s"
 msgstr "Tägliche Archive: %s"
 
-#: archive.php:51
+# @ bicbswp
+#: archive.php:62
 #, php-format
-#@ bicbswp
 msgid "Monthly Archives: %s"
 msgstr "Monatliche Archive: %s"
 
-#: archive.php:51
-#@ bicbswp
+# @ bicbswp
+#: archive.php:62
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr ""
 
-#: archive.php:55
+# @ bicbswp
+#: archive.php:66
 #, php-format
-#@ bicbswp
 msgid "Yearly Archives: %s"
 msgstr "Jährliche Archive: %s"
 
-#: archive.php:55
-#@ bicbswp
+# @ bicbswp
+#: archive.php:66
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr ""
 
-#: archive.php:58
+# @ bicbswp
+#: archive.php:69
 #, php-format
-#@ bicbswp
 msgid "Tag Archives: %s"
 msgstr "Schlagwort: %s"
 
-#: archive.php:68
+# @ bicbswp
+#: archive.php:79
 #, php-format
-#@ bicbswp
 msgid "Category Archives: %s"
 msgstr "Kategorie: %s"
 
-#: archive.php:78
-#@ bicbswp
+# @ bicbswp
+#: archive.php:89
 msgid "Blog Archives"
 msgstr "Blog Archiv"
 
-#: functions.php:43
-#@ bicbswp
+# @ bicbswp
+#: functions.php:47
 msgid "Main Menu"
 msgstr "Hauptmenü"
 
+# @ bicbswp
 #: functions.php:48
-#@ bicbswp
 msgid "Footer Menu"
 msgstr "Footer Menü"
 
-#: functions.php:130
-#@ bicbswp
+# @ bicbswp
+#: functions.php:49
+msgid "Header Menu"
+msgstr "Header Menü"
+
+# @ bicbswp
+#: functions.php:134
 msgid "Page Sidebar"
 msgstr "Seiten Sidebar"
 
-#: functions.php:154
-#@ bicbswp
-msgid "Home Left"
-msgstr "Startseite Links"
-
-#: functions.php:156
-#@ bicbswp
-msgid "Left textbox on homepage"
-msgstr "Linke Textbox auf der Startseite"
-
-#: functions.php:166
-#@ bicbswp
-msgid "Home Middle"
-msgstr "Startseite Mitte"
-
-#: functions.php:168
-#@ bicbswp
-msgid "Middle textbox on homepage"
-msgstr "Mittlere Textbox auf der Startseite"
-
-#: functions.php:178
-#@ bicbswp
-msgid "Home Right"
-msgstr "Startseite Rechts"
-
-#: functions.php:180
-#@ bicbswp
-msgid "Right textbox on homepage"
-msgstr "Rechte Textbox auf der Startseite"
-
-#: functions.php:193
-#: functions.php:195
-#@ bicbswp
-msgid "Footer Column 1"
-msgstr "Footer Spalte 1"
-
-#: functions.php:206
-#: functions.php:208
-#@ bicbswp
-msgid "Footer Column 2"
-msgstr "Footer Spalte 2"
-
-#: functions.php:219
-#: functions.php:221
-#@ bicbswp
-msgid "Footer Column 3"
-msgstr "Footer Spalte 3"
-
-#: functions.php:308
-#@ bicbswp
-msgid "Pingback:"
-msgstr ""
-
-#: functions.php:328
-#@ bicbswp
-msgid "Post author"
-msgstr "Autor"
-
-#: functions.php:336
-#@ bicbswp
-msgid "Your comment is awaiting moderation."
-msgstr "Dein Kommentar wird moderiert."
-
-#: functions.php:345
-#, php-format
-#@ bicbswp
-msgid "%1$s at %2$s"
-msgstr "%1$s bei %2$s"
-
-#: functions.php:353
-#@ bicbswp
-msgid "Reply <span>&darr;</span>"
-msgstr "Antworten <span>&darr;</span>"
-
-#: functions.php:383
-#, php-format
-#@ bicbswp
-msgid "Posted on <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"byline\"> <span class=\"sep\"> by </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
-msgstr "gepostet am <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"byline\"> <span class=\"sep\"> von </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
-
-#: functions.php:383
-#, php-format
-#@ bicbswp
-msgid "View all posts by %s"
-msgstr "Alle Beiträge von %s ansehen"
-
-#: functions.php:506
-#, php-format
-#@ bicbswp
-msgid "Page %s"
-msgstr "Seite %s"
-
-#: 404.php:60
-#@ bicbswp
-msgid "This is Embarrassing"
-msgstr "Schade."
-
-#: 404.php:64
-#@ bicbswp
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
-msgstr "Es sieht so aus, als könnten wir nicht finden, was du suchst. "
-
-#: search.php:51
-#, php-format
-#@ bicbswp
-msgid "Search Results for: %s"
-msgstr "Suchergebnisse für: %s"
-
-#: search.php:59
-#@ bicbswp
-msgid "No Results Found"
-msgstr "Keine Ergebnisse gefunden"
-
-#: search.php:93
-#@ bicbswp
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps you should try again with a different search term."
-msgstr "Es sieht so aus, als könnten wir nicht finden, was du suchst."
-
-#: content-single.php:13
-#: content.php:13
-#, php-format
-#@ bicbswp
-msgid "Permalink to %s"
-msgstr "Permalink zu %s"
-
-#: content-single.php:16
-#: content.php:16
-#@ bicbswp
-msgid "Edit"
-msgstr "Bearbeiten"
-
-#: footer.php:41
-#@ bicbswp
-msgid "Proudly powered by "
-msgstr ""
-
-#: footer.php:41
-#@ bicbswp
-msgid "http://wordpress.org/"
-msgstr ""
-
-#: footer.php:41
-#@ bicbswp
-msgid "WordPress"
-msgstr ""
-
-#: footer.php:42
-#@ bicbswp
-msgid "Theme: BIC Bootstrap WP Theme"
-msgstr ""
-
-#: includes/theme-options.php:49
-#@ default
-msgid "logo"
-msgstr ""
-
-#: includes/theme-options.php:66
-#@ default
-msgid "footertext"
-msgstr ""
-
-#: functions.php:141
-#@ bicbswp
+# @ bicbswp
+#: functions.php:145
 msgid "Post Sidebar"
 msgstr "Beitrags Sidebar"
 
-#: functions.php:539
-#@ bicbswp
-msgid "Archive by category "
-msgstr "Kategorie "
+# @ bicbswp
+#: functions.php:158
+msgid "Home Left"
+msgstr "Startseite Links"
 
-#: comments.php:34
-#@ bicbswp
-msgid "&larr; Older Comments"
-msgstr "Ältere Kommentare"
+# @ bicbswp
+#: functions.php:160
+msgid "Left textbox on homepage"
+msgstr "Linke Textbox auf der Startseite"
 
-#: comments.php:38
-#@ bicbswp
-msgid "Newer Comments &rarr;"
-msgstr "Neuere Kommentare"
+# @ bicbswp
+#: functions.php:170
+msgid "Home Middle"
+msgstr "Startseite Mitte"
 
-#: comments.php:49
-#@ bicbswp
-msgid "Comments are closed."
-msgstr "Kommentare sind geschlossen."
+# @ bicbswp
+#: functions.php:172
+msgid "Middle textbox on homepage"
+msgstr "Mittlere Textbox auf der Startseite"
 
-#: functions.php:54
-#@ bicbswp
-msgid "Header Menu"
-msgstr ""
+# @ bicbswp
+#: functions.php:182
+msgid "Home Right"
+msgstr "Startseite Rechts"
 
-#: functions.php:231
-#: functions.php:233
-#@ bicbswp
+# @ bicbswp
+#: functions.php:184
+msgid "Right textbox on homepage"
+msgstr "Rechte Textbox auf der Startseite"
+
+# @ bicbswp
+#: functions.php:197 functions.php:199
+msgid "Footer Column 1"
+msgstr "Footer Spalte 1"
+
+# @ bicbswp
+#: functions.php:210 functions.php:212
+msgid "Footer Column 2"
+msgstr "Footer Spalte 2"
+
+# @ bicbswp
+#: functions.php:223 functions.php:235
+msgid "Footer Column 3"
+msgstr "Footer Spalte 3"
+
+# @ bicbswp
+#: functions.php:235 functions.php:237
 msgid "Footer Column 4"
 msgstr "Footer Spalte 4"
 
-#: functions.php:277
-#@ bicbswp
-msgid "Post navigation"
-msgstr "Beitragsnavigation"
+# @bicbswp
+#: functions.php:250 functions.php:252
+msgid "Header Widget Area"
+msgstr "Header Widget Bereich"
 
-#: functions.php:279
-#@ bicbswp
-msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "Ältere Posts"
-
-#: functions.php:282
-#@ bicbswp
-msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Neuere Posts"
-
-#: includes/theme-options.php:53
-#@ default
-msgid "favicon"
-msgstr ""
-
-#: includes/theme-options.php:58
-#@ default
-msgid "front_page"
-msgstr ""
-
-#: includes/theme-options.php:94
-#@ default
-msgid "top-callout"
-msgstr ""
-
-#: searchform.php:14
-#: searchform.php:18
-#@ bicbswp
-msgid "Search"
-msgstr "Suche"
-
-#: functions.php:249
-#@ bicbswp
+# @ bicbswp
+#: functions.php:269
 msgid "Read More"
 msgstr "Weiterlesen"
 
-#: 404.php:74
-#@ bicbswp
-msgid "All Pages"
-msgstr "Alle Seiten"
+# @ bicbswp
+#: functions.php:297
+msgid "Post navigation"
+msgstr "Beitragsnavigation"
 
-#: 404.php:79
-#@ bicbswp
-msgid "Categories"
-msgstr "Kategorien"
+# @ bicbswp
+#: functions.php:299
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "Ältere Posts"
 
-#: index.php:66
-#@ bicbswp
-msgid "Recent Posts"
-msgstr "Neueste Beiträge"
+# @ bicbswp
+#: functions.php:302
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Neuere Posts"
 
-#: functions.php:598
-#@ bicbswp
+# @ bicbswp
+#: functions.php:328
+msgid "Pingback:"
+msgstr ""
+
+# @ bicbswp
+#: functions.php:347
+msgid "Post author"
+msgstr "Autor"
+
+# @ bicbswp
+#: functions.php:355
+msgid "Your comment is awaiting moderation."
+msgstr "Dein Kommentar wird moderiert."
+
+# @ bicbswp
+#: functions.php:365
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s bei %2$s"
+
+# @ bicbswp
+#: functions.php:373
+msgid "Reply <span>&darr;</span>"
+msgstr "Antworten <span>&darr;</span>"
+
+# @ bicbswp
+#: functions.php:403
+#, php-format
+msgid "Posted on <time class=\"entry-date\" datetime=\"%3$s\">%4$s</time><span class=\"byline\"> <span class=\"sep\"> by </span> <span class=\"author vcard\">%7$s</span></span>"
+msgstr "veröffentlicht am <time class=\"entry-date\" datetime=\"%3$s\">%4$s</time><span class=\"byline\"> <span class=\"sep\"> von </span> <span class=\"author vcard\">%7$s</span></span>"
+
+# @ bicbswp
+#: functions.php:403
+#, php-format
+msgid "View all posts by %s"
+msgstr "Alle Beiträge von %s ansehen"
+
+# @ bicbswp
+#: functions.php:487
+#, php-format
+msgid "Page %s"
+msgstr "Seite %s"
+
+# @ bicbswp
+#: functions.php:520
+msgid "Archive by category "
+msgstr "Kategorie "
+
+# @ bicbswp
+#: functions.php:579
 msgid "Search results for \""
 msgstr "Suchergebnisse für "
 
-#: functions.php:600
-#@ bicbswp
+# @ bicbswp
+#: functions.php:581
 msgid "Posts tagged \""
 msgstr "Beiträge mit dem Schlagwort \""
 
-#: functions.php:604
-#@ bicbswp
+# @ bicbswp
+#: functions.php:585
 msgid "Articles posted by "
 msgstr "Beiträge von "
 
-#: functions.php:606
-#@ bicbswp
+# @ bicbswp
+#: functions.php:587
 msgid "Error 404"
 msgstr "Fehler 404"
 
+# @ bicbswp
+#: search.php:58
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse für: %s"
+
+# @ bicbswp
+#: search.php:66
+msgid "No Results Found"
+msgstr "Keine Ergebnisse gefunden"
+
+# @ bicbswp
+#: search.php:88
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps you should try again with a different search term."
+msgstr "Es sieht so aus, als könnten wir nicht finden, was du suchst."
+
+# @ bicbswp
+#: content-single.php:13 content.php:13
+#, php-format
+msgid "Permalink to %s"
+msgstr "Permalink zu %s"
+
+# @ bicbswp
+#: content-single.php:16 content.php:16
+msgid "Edit"
+msgstr "Bearbeiten"
+
+# @ bicbswp
+#: footer.php:41
+msgid "Proudly powered by "
+msgstr ""
+
+# @ bicbswp
+#: footer.php:41
+msgid "http://wordpress.org/"
+msgstr ""
+
+# @ bicbswp
+#: footer.php:41
+msgid "WordPress"
+msgstr ""
+
+# @ bicbswp
+#: footer.php:42
+msgid "Theme: BIC Bootstrap WP Theme"
+msgstr ""
+
+# @ default
+#: includes/theme-options.php:49
+msgid "logo"
+msgstr ""
+
+# @ default
+#: includes/theme-options.php:66
+msgid "footertext"
+msgstr ""
+
+# @ bicbswp
+#: comments.php:34
+msgid "&larr; Older Comments"
+msgstr "&larr; Ältere Kommentare"
+
+# @ bicbswp
+#: comments.php:38
+msgid "Newer Comments &rarr;"
+msgstr "Neuere Kommentare &rarr;"
+
+# @ bicbswp
+#: comments.php:49
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+# @ default
+#: includes/theme-options.php:53
+msgid "favicon"
+msgstr ""
+
+# @ default
+#: includes/theme-options.php:58
+msgid "front_page"
+msgstr ""
+
+# @ default
+#: includes/theme-options.php:94
+msgid "top-callout"
+msgstr ""
+
+# @ bicbswp
+#: searchform.php:12 searchform.php:13
+msgid "Search"
+msgstr "Suche"
+
+# @ bicbswp
+#: 404.php:60
+msgid "This is Embarrassing"
+msgstr "Schade."
+
+# @ bicbswp
+#: 404.php:64
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
+msgstr "Es sieht so aus, als könnten wir nicht finden, was du suchst. "
+
+# @ bicbswp
+#: 404.php:74
+msgid "All Pages"
+msgstr "Alle Seiten"
+
+# @ bicbswp
+#: 404.php:79
+msgid "Categories"
+msgstr "Kategorien"
