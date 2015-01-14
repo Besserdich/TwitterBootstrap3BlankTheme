@@ -515,7 +515,7 @@ function bootstrapwp_breadcrumbs($addTexts = true) {
             $thisCat = get_category($thisCat);
             $parentCat = get_category($thisCat->parent);
             if ($thisCat->parent != 0) {
-                echo get_category_parents($parentCat, true, $sep);
+                echo '<li>'.get_category_parents($parentCat, true, "{$sep}</li><li>").'</li>';
             }
             $format = $before . ($addTexts ? (__('Archive by category ', 'bicbswp') . '"%s"') : '%s') . $after;
             echo sprintf($format, single_cat_title('', false));
